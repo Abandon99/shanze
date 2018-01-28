@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>吊炸天的书评app</title>
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!--<script src="node_modules/vue/dist/vue.js"></script>-->
+    <!--<script src="node_modules/vue-router/dist/vue-router.js"></script>-->
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+    <!--<script src="vue.js"></script>-->
+
+
+</head>
+<body >
+<div id="app">
+    <header>
+        <div class="left">
+            <input class="header-input" type="text" placeholder="本周小说榜">
+            <img src="images/icon/搜索.png" alt="">
+        </div>
+        <div class="left search-img"><img src="images/icon/扫一扫.png" alt=""></div>
+    </header>
+
+    <div class="container">
+        <!--<div v-on:click="clickId(item.id)" style="clear: both" class="main" v-for="(item,index) in mainData">
+            &lt;!&ndash;<div>{{index+1}}</div>&ndash;&gt;
+            &lt;!&ndash;<div><p>id:</p>{{item.id}}</div>&ndash;&gt;
+            <div class="title">{{item.title}}</div>
+            <div>detail:{{item.detail}}</div>
+            <div>type:{{item.type}}</div>
+        </div>-->
+        <h1>啊烦死了</h1>
+
+        <router-view></router-view>
+
+    </div>
+
+
+    <footer>
+        <router-link  to="/home" class="page">
+            <img src="images/icon/首页.png" alt="">
+            <div>首页</div>
+        </router-link>
+        <router-link  to="/list" class="page">
+            <img src="images/icon/首页.png" alt="">
+            <div>榜單</div>
+        </router-link>
+        <router-link  to="/mine" class="page">
+            <img src="images/icon/首页.png" alt="">
+            <div>我的</div>
+        </router-link>
+
+    </footer>
+
+</div>
+
+
+
+
+<script src="main.js"></script>
+
+</body>
+
+</html>
